@@ -1,0 +1,60 @@
+.out {
+  width: 500px;
+  height: 600px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* .water {
+  position: absolute;
+  width: 98%;
+  bottom: 5vh;
+  left: 1%;
+  background-color: rgba(0, 0, 200, .2);
+} */
+
+.bucket {
+  width: 495px;
+  height: 600px;
+  overflow: hidden;
+  border-radius: 50% / 6%;
+  position: absolute;
+  bottom: 1.5vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.water {
+  width: 100%;
+  /* height: 70%; */
+  background-color: rgba(0, 0, 255, .6);
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  transform-origin: bottom center;
+  mix-blend-mode: darken;
+  /* filter: contrast(50%) brightness(120%) saturate(120%); */
+  filter: brightness(80%) contrast(120%) opacity(0.3) drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
+}
+
+.water::after {
+  content: '';
+  position: absolute;
+  bottom: -3vh;
+  width: 100%;
+  height: 5vh;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 255, .2);
+}
+
+.water::before {
+  content: '';
+  position: absolute;
+  top: -3.5vh;
+  width: 100%;
+  height: 7vh;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 255, .6);
+}

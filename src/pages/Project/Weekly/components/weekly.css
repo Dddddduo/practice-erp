@@ -1,0 +1,43 @@
+.weekly-item-title {
+  border: none;
+  border-bottom: solid 1px #cccccc;
+}
+
+.detail-items {
+  margin-top: 20px;
+  border: solid 1px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.progress-week-list {
+  overflow: hidden;
+  border: dashed 1px;
+}
+.progress-week-list div{
+  float: left;
+}
+.progress-week-item {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+.progress-week-item:first-child {
+  width: 10%;
+  border-right: dashed 1px;
+}
+.progress-week-item:nth-child(2) {
+  width: 26%;
+  border-right: dashed 1px;
+}
+.progress-week-item:nth-child(3) {
+  width: 26%;
+  border-right: dashed 1px;
+}
+.progress-week-item:nth-child(4) {
+  width: 26%;
+  border-right: dashed 1px;
+}
+.progress-week-item:nth-child(5) {
+  width: 10%;
+}

@@ -1,0 +1,94 @@
+/* 店铺组件 */
+.scan_left {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-around; */
+}
+
+.addBtn {
+  position: absolute;
+  top: 15px;
+  left: 100px;
+  z-index: 1000;
+}
+
+.shop-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.shop-name {
+  width: 60%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.shop-btn {
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+}
+
+.shop-item-card {
+  width: 30%;
+  margin: 10px;
+}
+
+.shop-item-mask {
+  background-color: rgba(255, 216, 210, .3) !important;
+  /* border: solid 1px #fbe7e1; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.shop-item-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../../../assets/image/3d-btn.png');
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  z-index: 1000;
+}
+
+/* 地图组件 */
+.videoModel {
+  background-color: none !important;
+  box-shadow: none !important;
+}
+
+.tips-ul {
+  width: 300px;
+}
+
+.tips-li {
+  display: flex;
+  width: 100%;
+}
+
+.tips-title {
+  width: 80px;
+}
+
+.tips-msg {
+  width: 200px;
+}
+
+/* 分享组件 */
+.linkForm {
+  position: relative;
+}
+
+.copy {
+  position: absolute;
+  margin-left: 10px;
+}
