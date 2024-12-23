@@ -1,0 +1,24 @@
+.container {
+  font-family: 'Calibri';
+  margin: 50px auto;
+  width: 1700px;
+}
+
+.print {
+  position: fixed;
+  height: 56px;
+  width: 100%;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  z-index: 100;
+}
+
+.quotation_button {
+  position: fixed;
+  top: 10vh;
+  left: 40vw;
+  z-index: 1000;
+}

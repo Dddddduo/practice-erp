@@ -1,0 +1,50 @@
+.btns {
+  display: flex;
+  align-items: start;
+}
+
+.btn-speed {
+  margin-right: 300px;
+}
+
+.speed {
+  width: 180px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.btn {
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.bottomImage {
+  width: 75vw;
+  position: relative;
+  height: 45vh;
+  /* background-color: beige; */
+  margin: 0 auto;
+}
+
+.fan {
+  width: 2.5vw;
+  position: absolute;
+  left: 43vw;
+  top: 26vh;
+  animation: linear move infinite;
+}
+
+@keyframes move {
+  form {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

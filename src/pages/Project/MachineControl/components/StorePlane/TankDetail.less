@@ -1,0 +1,80 @@
+.tank-water {
+  width: 890px;
+  height: 350px;
+  background-image: url("/image/air/water-tank.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+
+  .one-tank,
+  .two-tank {
+    width: 20px;
+    position: absolute;
+
+    .tank-img {
+      width: 100%;
+    }
+  }
+
+  .one-tank {
+    left: 386px;
+    top: 55px;
+  }
+
+  .two-tank {
+    left: 446px;
+    top: 55px;
+  }
+
+  .cylinder {
+    position: absolute;
+    width: 282px;
+    bottom: 18px;
+    left: 303px;
+    transition: height 0.5s;
+
+    .top, .bottom {
+      position: absolute;
+      left: 50%;
+      width: 100%;
+      height: 30px;
+      margin-left: -50%;
+      background-color: rgba(0, 162, 232, 0.7); /* 水的颜色 */
+      border-radius: 50%;
+    }
+
+    .top {
+      top: 0;
+    }
+
+    .bottom {
+      bottom: 0;
+    }
+
+    .side {
+      position: absolute;
+      top: 15px; /* Half of the top/bottom height to align properly */
+      left: 0;
+      width: 100%;
+      height: calc(100% - 30px); /* Height of the cylinder minus the top/bottom */
+      background: linear-gradient(to bottom, rgba(0, 162, 232, 0.25), rgba(0, 162, 232, 0.55));
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      width: 100px;
+      height: 30px;
+      margin-left: -50px;
+      background-color: rgba(0, 162, 232, 0.7);
+      border-radius: 50%;
+      z-index: -1; /* Send the pseudo-elements behind the main content */
+    }
+
+    &::before {
+      top: 0;
+    }
+  }
+}
